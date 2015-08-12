@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ImageProcessing" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/ImageProcessing" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/ImageProcessing" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Linker>
+			<Add library="X11" />
+			<Add library="png" />
+		</Linker>
+		<Unit filename="imageProcessing/CImg.h" />
+		<Unit filename="imageProcessing/task.cpp" />
+		<Unit filename="imageProcessing/task.h" />
+		<Unit filename="imageProcessing/taskgenerator.cpp" />
+		<Unit filename="imageProcessing/taskgenerator.h" />
+		<Unit filename="imageProcessing/taskprocessor.cpp" />
+		<Unit filename="imageProcessing/taskprocessor.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="scheduler/memorybasedexecutioncontroller.cpp" />
+		<Unit filename="scheduler/memorybasedexecutioncontroller.h" />
+		<Unit filename="scheduler/memoryprofiler.cpp" />
+		<Unit filename="scheduler/memoryprofiler.h" />
+		<Unit filename="usageReporter/UsageReporter.cpp" />
+		<Unit filename="usageReporter/UsageReporter.h" />
+		<Unit filename="usageReporter/usagecsvsaver.cpp" />
+		<Unit filename="usageReporter/usagecsvsaver.h" />
+		<Unit filename="utils/MeasureTime.cpp" />
+		<Unit filename="utils/MeasureTime.h" />
+		<Unit filename="utils/platformDependent.h" />
+		<Unit filename="utils/platform_linux.cpp" />
+		<Unit filename="utils/platform_windows.cpp" />
+		<Unit filename="utils/threadpool.cpp" />
+		<Unit filename="utils/threadpool.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
